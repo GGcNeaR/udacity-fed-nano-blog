@@ -1,0 +1,29 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+
+    border: 1px solid #ccc;
+}
+
+.panel h2 {
+    font-size: 1.3em;
+    background-color: #373737;
+    color: #ffd;
+}
+
+.panel p {
+    font-size: 1.1em;
+}
+
+.panel h2,
+.panel p {
+    padding: 8px;
+}
+
+.panel .profile-picture {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    border-radius: 50px;
+}

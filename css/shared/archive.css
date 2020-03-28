@@ -1,0 +1,17 @@
+.archive > ul {
+    font-size: 1.3em;
+}
+
+.archive li {
+    margin-left: 16px;
+    padding: 4px;
+}
+
+.archive a {
+    color: #004;
+    font-size: 0.8em;
+}
+
+.archive a:hover {
+    color: rgb(160, 124, 26);
+}

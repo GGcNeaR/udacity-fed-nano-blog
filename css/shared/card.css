@@ -1,0 +1,83 @@
+.card {
+    display: grid;
+    grid-template-areas: 
+        'c c c'
+        'h h h'
+        'a a t'
+        'd d d'
+        'f f f';
+
+    margin: 8px;
+    align-content: flex-start;
+
+    border: 1px solid #ccc;
+}
+
+.card .cover {
+    grid-area: c;
+    height: 120px;
+    background-image: url(/img/cover2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card h1,
+.card h2,
+.card h3 {
+    grid-area: h;
+    font-weight: 500;
+}
+
+.card a[rel='author']:link {
+    text-decoration: none;
+}
+
+.card a[rel='author'] {
+    grid-area: a;
+    color: #002;
+    font-style: italic;
+}
+
+.card a[rel='author']::before {
+    content: 'Author: ';
+}
+
+.card time {
+    grid-area: t;
+    justify-self: flex-end;
+    font-style: italic;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card a[rel='author'],
+.card time,
+.card p {
+    padding: 4px 8px;
+}
+
+.card p {
+    grid-area: d;
+    font-size: 1.2em;
+    padding-bottom: 16px;
+}
+
+.card p > .read-more {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    color: #002;
+}
+
+.card h1 {
+    font-size: 1.8em;
+}
+
+.card h2 {
+    font-size: 1.6em;
+}
+
+.card h3 {
+    font-size: 1.4em;
+}
