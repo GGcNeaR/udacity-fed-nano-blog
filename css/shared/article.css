@@ -1,0 +1,137 @@
+article .cover {
+    height: 300px;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(21,21,40,1) 65%, rgba(110,110,110,1) 100%);
+}
+
+article .author-info,
+article h1,
+article h2,
+article h3,
+article ul,
+article figure,
+article p {
+    padding: 4px 16px;
+}
+
+article section {
+    margin: 16px 0;
+}
+
+article section::after {
+    display: block;
+    content: '. . .';
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 0.5em;
+    color: #7a7878;
+}
+
+article figure {
+    text-align: center;
+}
+
+article img {
+    max-width: 80vw;
+}
+
+article h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+article h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    text-indent: 16px;
+}
+
+article h3 {
+    font-size: 1.4em;
+    color: #7a7878;
+}
+
+article ul {
+    margin: 12px;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+article ul li {
+    margin: 8px 24px;
+    list-style-type: disc;
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-indent: 32px;
+    margin: 8px 0;
+}
+
+.author-info {
+    display: grid;
+    grid-template-areas: 
+        'a n'
+        'a b';
+        align-items: center;
+        justify-content: flex-start;
+}
+
+.author-info .profile-picture {
+    grid-area: a;
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 50px;
+    border: 2px #7a7878 solid;
+}
+
+.author-info .author-name {
+    grid-area: n;
+    font-size: 1.2em;
+    color: #002;
+}
+
+.author-info .author-bio {
+    grid-area: b;
+    align-self: flex-start;
+    color: #7a7878;
+}
+
+article blockquote {
+    margin: 16px 48px;
+    padding: 20px 20px 20px 32px;
+    border-left: 4px dashed #ddd;
+    font-size: 1.5em;
+}
+
+.social-links .facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-links .twitter {
+    background-color: #00acee;
+    color: #fff;
+}
+
+.social-links .linkedin {
+    background-color: #0e76a8;
+    color: #fff;
+}
+
+@media (min-width: 900px) {
+    article p {
+        font-size: 1.2em;
+    }
+
+    .social-links .btn-group {
+        flex-direction: row;
+    }
+    .social-links button {
+        flex-grow: 1;
+    }
+}

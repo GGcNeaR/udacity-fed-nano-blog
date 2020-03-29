@@ -1,0 +1,30 @@
+@import 'shared/reset.css';
+@import 'shared/default.css';
+@import 'shared/navbar.css';
+@import 'shared/footer.css';
+
+@import 'shared/panel.css';
+
+@import 'shared/article.css';
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+    justify-self: center;
+}
+
+@media (min-width: 600px) {
+    .main-content {
+        max-width: 90vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .main-content {
+        max-width: 70vw;
+    }
+}
