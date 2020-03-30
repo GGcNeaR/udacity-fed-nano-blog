@@ -16,7 +16,7 @@
 .card .cover {
     grid-area: c;
     height: 120px;
-    background-image: url(/img/cover2.jpg);
+    background-image: url(./../../img/cover2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
